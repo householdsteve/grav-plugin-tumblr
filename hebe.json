@@ -1,0 +1,15 @@
+{
+   "project":"grav-plugin-tumblr",
+   "platforms":{
+      "grav":{
+         "nodes":{
+            "plugin":[
+               {
+                  "source":"/",
+                  "destination":"/user/plugins/tumblr"
+               }
+            ]
+         }
+      }
+   }
+}

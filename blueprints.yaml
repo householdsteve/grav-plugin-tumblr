@@ -1,0 +1,26 @@
+name: Tumblr
+version: 0.0.1
+description: "Testing tumblr"
+icon: tumblr
+author:
+  name: Steve McCrumb
+  email: steve@mcccrumb.net
+  url: stevenmccrumb.com
+homepage: http://stevenmccrumb.com
+keywords: tumblr, plugin, api
+bugs: http://stevenmccrumb.com
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+        type: toggle
+        label: Plugin status
+        highlight: 1
+        default: 1
+        options:
+            1: Enabled
+            0: Disabled
+        validate:
+            type: bool

@@ -1,0 +1,17 @@
+{
+    "name": "grav-plugin-tumblr",
+    "type": "plugin",
+    "description": "Grav Tumblr plugin is a tumblr wrapper plugin for Grav",
+    "keywords": ["cms"],
+    "homepage": "http://stevenmccrumb.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve McCrumb",
+            "email": "steve@mccrumb.net"
+        }
+    ],
+    "require": {
+        "tumblr/tumblr": "0.2.*"
+    }
+}

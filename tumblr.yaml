@@ -1,0 +1,6 @@
+enabled: true
+
+settings:
+    page: ''
+    consumerKey: ''
+    consumerSecret: ''

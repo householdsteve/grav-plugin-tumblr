@@ -1,0 +1,20 @@
+{% extends 'partials/tumblr_base.html.twig' %}
+
+{% block content %}
+    
+    {{ page.content }}
+    
+    <div>
+      {# note: disabled 
+      {% cache 'tumblr_blog_posts' 600 %}
+      #}
+    	{% for post in tumblr.client.getBlogPosts(page.header.tumblr.settings.page).posts %}
+        <article>
+          {% include ('partials/types/'~ post.type ~'.html.twig') %}
+        </article>
+        {% endfor %}
+      {# note: disabled 
+      {% endcache %}
+      #}
+    </div>
+{% endblock %}
