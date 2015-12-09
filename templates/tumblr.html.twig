@@ -5,7 +5,7 @@
     {{ page.content }}
     
     <div>
-      {# note: disabled 
+      {# note: cache disabled 
       {% cache 'tumblr_blog_posts' 600 %}
       #}
     	{% for post in tumblr.client.getBlogPosts(page.header.tumblr.settings.page).posts %}
@@ -13,7 +13,7 @@
           {% include ('partials/types/'~ post.type ~'.html.twig') %}
         </article>
         {% endfor %}
-      {# note: disabled 
+      {# note: cache disabled 
       {% endcache %}
       #}
     </div>
