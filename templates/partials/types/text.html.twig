@@ -1,3 +1,10 @@
 {% block type %}
-  {{ post.short_url }} <br>
+  <header>
+    <h1><a href="{{ post.short_url }}">{{ post.title }}</a></h1>
+    <time>{{ post.date }}</time>
+  </header>
+  
+  <p>
+    {{ post.body }}
+  </p>
 {% endblock %}

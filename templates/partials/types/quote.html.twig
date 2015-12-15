@@ -1,3 +1,10 @@
 {% block type %}
-  {{ post.short_url }} <br>
+  <blockquote>
+    {{ post.text }}
+  </blockquote>
+  
+  <p>
+    <cite>{{ post.source }}</cite>
+    <a href="{{ post.short_url }}"><time>{{ post.date }}</time></a>
+  </p>
 {% endblock %}

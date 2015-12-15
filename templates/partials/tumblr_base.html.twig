@@ -1,4 +1,9 @@
 {% extends 'partials/base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    {% do assets.addCss('plugin://tumblr/css/base.css') %}
+{% endblock %}
+
 {% block content %}
 {% endblock %}

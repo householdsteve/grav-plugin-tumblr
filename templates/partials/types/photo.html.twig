@@ -1,3 +1,9 @@
 {% block type %}
-  {{ post.short_url }} <br>
+  <header>
+    <h1><a href="{{ post.short_url }}">{{ post.caption }}</a></h1>
+    <time>{{ post.date }}</time>
+  </header>
+  
+  <img src="{{ post.photos[0].alt_sizes[1].url }}" width="{{ post.photos[0].alt_sizes[1].width }}" height="{{ post.photos[0].alt_sizes[1].height }}">
+  </p>
 {% endblock %}

@@ -1,0 +1,7 @@
+.tumblr_plugin * {
+  letter-spacing: 0 !important;
+}
+
+.tumblr_plugin h1 {
+  font-size:120%;
+}

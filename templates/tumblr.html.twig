@@ -1,20 +1,16 @@
 {% extends 'partials/tumblr_base.html.twig' %}
 
 {% block content %}
-    
     {{ page.content }}
-    
-    <div>
-      {# note: cache disabled 
+      {# note: twig cache plugin should be used in tandem with this plugin
       {% cache 'tumblr_blog_posts' 600 %}
       #}
     	{% for post in tumblr.client.getBlogPosts(page.header.tumblr.settings.page).posts %}
-        <article>
+        <article class="tumblr_plugin {{ post.type }}">
           {% include ('partials/types/'~ post.type ~'.html.twig') %}
         </article>
         {% endfor %}
-      {# note: cache disabled 
+      {# note: cache disabled for demo purposes 
       {% endcache %}
       #}
-    </div>
 {% endblock %}

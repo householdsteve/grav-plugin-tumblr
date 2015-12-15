@@ -1,3 +1,11 @@
 {% block type %}
-  {{ post.short_url }} <br>
+  <blockquote>
+    {{ post.question }}
+    <cite>{{ post.asking_name }}</cite>
+  </blockquote>
+  
+  <section>
+    {{ post.answer }}
+    <time>{{ post.date }}</time>
+  </section>
 {% endblock %}
